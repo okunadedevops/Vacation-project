@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
