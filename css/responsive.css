@@ -27,7 +27,7 @@
         margin-bottom: 20px;
     }
     .bg-image{
-        height: 60vh;
+        height: 70vh;
         }
     .flex{
         align-items: left;
@@ -51,7 +51,7 @@
     }
     
     .highlight{
-         padding: 5px;
+         padding: 10px;
     }
     .mt-font{
         padding:20px;
