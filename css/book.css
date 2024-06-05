@@ -1,16 +1,13 @@
 /* Add your custom CSS styles here */
 body {
-    font-family: 'Montserrat', sans-serif;
     background-color: #f4f4f4;
-    padding: 20px;
-    margin: 0;
-    display: block;
-    justify-content: flex;
 }
-#booking-form{
+
+#booking-form {
     padding-right: 30px;
 }
-.flex h1{
+
+.flex h1 {
     background-color: green;
     width: 20%;
     color: white;
@@ -18,9 +15,11 @@ body {
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-.flex h1 a{
+
+.flex h1 a {
     color: white;
 }
+
 h1 {
     text-align: center;
     color: #096d22;
@@ -38,11 +37,13 @@ form {
 label {
     display: block;
     margin-bottom: 8px;
-    color:#096d22;
+    color: #096d22;
     font-weight: bold;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
