@@ -5,71 +5,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/general-styles.css">
-    <link rel="stylesheet" href="./css/book.css">
-
     <link rel="stylesheet" href="./css/responsive.css">
-   
+    <link rel="stylesheet" href="./css/book.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="./js/general_functionalities.js" defer></script>
     <title>Vacation Villa - Make Bookings</title>
 
 <body>
-    <header class="flex">
-        <h1><a href="index.html"> Vacation Villa </a></h1>
-    </header>
-    <h1>Book Your Villa</h1>
-    <form id="booking-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <div class="bg-image">
+        <header class="flex">
+            <h1>Vacation Villa</h1>
+            <div id="collapse">
+                <nav class="flex">
+                    <a href="#" class=" wt-400">home</a>
+                    <a href="service.html" class=" wt-400">service</a>
+                    <a href="book.html" class=" wt-400">Contact</a>
+                </nav>
+                <form class="search-container flex" id="search-form">
+                    <button type="button" class="search-btn flex" aria-label="Search the place you typed"><iconify-icon
+                            icon="carbon:search"></iconify-icon></button>
+                    <input type="text" name="place-to-search" id="" placeholder="Search">
+                </form>
+            </div>
+            <button type="button" id="open-mobile-menu" aria-label="Click to open nav bar on mobile"><iconify-icon
+                    icon="hugeicons:menu-05"></iconify-icon></button>
+        </header>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
+        <form id="booking-form" class="form">
+            <h1>Book Your Villa</h1>
 
-        <label for="villa">Select Villa:</label>
-        <select id="villa" name="villa">
-            <option value="villa1">Villa 1</option>
-            <option value="villa2">Villa 2</option>
-            <!-- Add more villa options -->
-        </select>
+            <div class="field">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
 
-        <label for="date">Choose Date:</label>
-        <input type="date" id="date" name="date" required>
+            <div class="field">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4"></textarea>
+            <div class="field">
+                <label for="villa">Select Villa:</label>
+                <select id="villa" name="villa">
+                    <option value="villa1">Villa 1</option>
+                    <option value="villa2">Villa 2</option>
+                </select>
+            </div>
 
-        <button type="submit">Book Now</button>
-    </form>
+            <div class="field">
+                <label for="date">Choose Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="field">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="submit-form">Book Now</button>
+        </form>
+
+        <div class="payment-form-container">
+            <form id="payment-form" class="form">
+                <h1>Payment Form</h1>
+                <div class="field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="field">
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" name="amount" required>
+                </div>
+
+                <button type="button" class="submit-form" onclick="payWithPaystack()">Pay Now</button>
+            </form>
+        </div>
+    </div>
+
+
 
     <div id="confirmation-message" style="display: none;">
         Thank you for booking! We'll be in touch shortly.
     </div>
-    <div class="payment-form-container">
-        <h1>Payment Form</h1>
-        <form id="payment-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="amount">Amount:</label>
-            <input type="number" id="amount" name="amount" required>
-
-            <button type="button" onclick="payWithPaystack()">Pay Now</button>
-        </form>
-    </div>
     <footer>
         <div class="footer-container flex">
             <!-- About Section -->
             <div class="footer-section">
                 <h3>About Us</h3>
-                <p>We are dedicated to providing the best service in the industry. Our mission is to deliver quality and value to our customers.</p>
+                <p>We are dedicated to providing the best service in the industry. Our mission is to deliver quality and
+                    value to our customers.</p>
             </div>
             <!-- Quick Links Section -->
             <div class="footer-section">
                 <h3>Quick Links</h3>
-                <p><a href="#">Home</a></p>
-                <p><a href="#">Services</a></p>
-                <p><a href="#">Contact</a></p>
+                <p><a href="./index.html">Home</a></p>
+                <p><a href="./services.html">Services</a></p>
+                <p><a href="./contact.html">Contact</a></p>
                 <p><a href="#about">About</a></p>
             </div>
             <!-- Social Media Section -->
