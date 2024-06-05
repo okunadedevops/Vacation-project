@@ -1,0 +1,280 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --vacation-yellow : #f2c464;
+    --black-overlay : radial-gradient(farthest-corner at 25px 25px, rgb(0, 0, 0, 0.95), rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.75));
+}
+
+::placeholder {
+    color: rgb(255, 255, 255, 0.75);
+}
+
+body {
+    font-family: "Merriweather", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.wt-400 {
+    font-weight: 400;
+}
+
+.wt-500 {
+    font-weight: 500;
+}
+
+.wt-700 {
+    font-weight: 700;
+}
+
+.mt-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+header {
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 5%;
+    color: white;
+    backdrop-filter: blur(3px);
+}
+
+.bg-image {
+    background-image: var(--black-overlay), url(../images/vacation.jpg);
+    background-position: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#collapse {
+    display: flex;
+}
+
+.search-container {
+    border: 2.5px solid rgb(255, 255, 255, 0.75);
+    border-radius: 30px;
+}
+
+.search-container input[type="text"] {
+    width: 90%;
+    margin-right: 10px;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+}
+
+.search-btn {
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50%;
+    justify-content: center;
+    width: 40px;
+    aspect-ratio: 1/1;
+}
+
+header img {
+    height: inherit;
+    aspect-ratio: 3/2;
+}
+
+header nav {
+    width: 50vw;
+    justify-content: space-evenly;
+    font-size: 1.05em;
+    /* letter-spacing: 1.5px; */
+}
+
+header nav a {
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+#open-mobile-menu {
+    display: none;
+}
+
+#collapse.true {
+    flex-direction: column;
+}
+
+#collapse.true nav {
+    flex-direction: column;
+}
+.hero {
+    height: 30vh;
+    align-items: center;
+}
+
+.call-to-action {
+    width: 40vw;
+    color: #fff;
+    margin: 10% 0 0 5%;
+}
+
+.call-to-action h1 {
+    font-size: clamp(2rem, 2rem + 1vw,1rem);
+    margin: 0;
+}
+
+.call-to-action p {
+    /* note the font size of this tag is 1.618 times smaller than the h1 above it */
+    font-size: 120%;
+    line-height: calc(18px * 1.618);
+    margin: 30px 0;
+}
+
+.call-to-action button {
+    padding: 10px 20px;
+    font-size: 1em;
+    gap: 5px;
+    cursor: pointer;
+} 
+.service-div{
+    height:60vh;
+    width:100%;
+    display: block;
+    padding:40px;
+    justify-content:flex;
+}
+.service{
+    height: 100vh;
+}
+.service-img{
+    height:50vh;
+    float:right;
+    margin-right: 170px;
+    width: 40%;
+    background-image: url(../images/vacation.jpg);
+    background-position: center;
+    border-radius: 25px;
+}
+.services{
+    padding: 20px;
+    width:30%;
+    margin-left: 170px;
+    border: solid black;
+    border-radius: 25px;
+    margin-top: 90px;
+    background-color:white;
+
+}
+.services h1{
+    color: black;
+
+
+}
+.service-button{
+    font-weight: bold;
+    color: white;
+    letter-spacing:1.0;
+    padding:7px 20px 7px 20px;
+    height:60px;
+    background-color: black;
+    border: solid gray;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.service-div1{
+    height:60vh;
+    width:100%;
+    display: block;
+    padding:40px;
+    justify-content:flex;
+}
+.service1{
+    height: 100vh;
+}
+.service-img1{
+    height:50vh;
+    float:left;
+    margin-right: 170px;
+    width: 40%;
+    background-image: url(../images/vacation.jpg);
+    background-position: center;
+    border-radius: 25px;
+}
+.services1{
+    float:right;
+    padding: 20px;
+    width:30%;
+    margin-right: 190px;
+    border: solid black;
+    border-radius: 25px;
+    margin-top: 90px;
+    background-color:white;
+
+}
+.services1 h1{
+    color:black;
+}
+.service-button{
+    font-weight: bold;
+    color: white;
+    letter-spacing:1.0;
+    padding:7px 20px 7px 20px;
+    height:60px;
+    background-color: black;
+    border: solid gray;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.contact-div{
+    height:30vh;
+    align-items: center;
+    background-color: black;
+}
+.contact-content{
+    height:100%;
+    width: 100%;
+    align-items: center;
+}
+.contact-content h1{
+    font-size: 30px;
+    color:white;
+    text-align: center;
+    padding-top: 60px;
+}
+.contact-content p{
+    color: white;
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+.contact-button{
+    transform: translateX(45vw);
+    font-weight: bold;
+    color: white;
+    letter-spacing:1.0;
+    padding:7px 20px 7px 20px;
+    height:60px;
+    background-color: black;
+    border: solid gray;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+   
+}

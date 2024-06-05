@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/book.css">
+
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+    <title>Booking Form</title>
+    <body>
+        <h1>Book Your Villa</h1>
+        <form id="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="villa">Select Villa:</label>
+            <select id="villa" name="villa">
+                <option value="villa1">Villa 1</option>
+                <option value="villa2">Villa 2</option>
+                <!-- Add more villa options -->
+            </select>
+    
+            <label for="date">Choose Date:</label>
+            <input type="date" id="date" name="date" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+    
+            <button type="submit">Book Now</button>
+        </form>
+    
+        <div id="confirmation-message" style="display: none;">
+            Thank you for booking! We'll be in touch shortly.
+        </div>
+        <script>
+            const adminEmail = 'okunadeoluwatimileyin@gmail.com';
+            const bookingForm = document.getElementById('booking-form');
+            const confirmationMessage = document.getElementById('confirmation-message');
+    
+            bookingForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // Handle form submission (e.g., send data to server)
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const villa = document.getElementById('villa').value;
+                const date = document.getElementById('date').value;
+                const message = document.getElementById('message').value;
+    
+                // Simulate sending email to admin
+                sendEmailToAdmin(name, email, villa, date, message);
+    
+                // Simulate sending auto-response to user
+                sendAutoResponseToUser(email);
+    
+                // Show confirmation message
+                confirmationMessage.style.display = 'block';
+                bookingForm.reset();
+            });
+    
+            function sendEmailToAdmin(name, email, villa, date, message) {
+                // Simulate email sending to admin
+                console.log(`Email sent to admin:
+                From: ${name} <${email}>
+                Villa: ${villa}
+                Date: ${date}
+                Message: ${message}`);
+            }
+    
+            function sendAutoResponseToUser(email) {
+                // Simulate auto-response email to user
+                console.log(`Auto-response sent to: ${email}`);
+            }
+        </script>
+    </body>
+</html>
