@@ -37,6 +37,14 @@
     form#contact-form {
         margin-inline: 0;
     }
+
+    .contact {
+        gap: 30px;
+    }
+
+    #contact-form h1 {
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width : 840px) {
@@ -76,9 +84,9 @@
         font-size: 12px;
         margin-top: 20px;
     }
-    
-    .highlight{
-         padding: 10px;
+
+    .highlight {
+        padding: 10px;
     }
 
     .mt-font {
@@ -94,7 +102,7 @@
     footer {
         padding-inline: 50px;
     }
-    
+
     .footer-container {
         flex-direction: row;
         justify-content: space-between;
