@@ -10,7 +10,7 @@
 
 
     .call-to-action h1 {
-        font-size: clamp(2.5rem, 0.9762rem + 7.619vw, 3rem);
+        font-size: clamp(2.1875rem, 1.25rem + 1.9531vw, 2.5rem);
     }
 
     .teaser {
@@ -27,6 +27,15 @@
 
     .search-container {
         max-width: 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 50px !important;
+    }
+
+    form#contact-form {
+        margin-inline: 0;
     }
 }
 

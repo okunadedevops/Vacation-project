@@ -15,7 +15,6 @@
 
 .contact article {
     width: 100%;
-    font-size: 1.5em;
 }
 
 .phone {
@@ -38,14 +37,19 @@
     margin-bottom: 20px;
 }
 
-.field input {
+.field .input {
     width: inherit;
     border: none;
-    font-size: 1.05em;
+    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     line-height: 2;
     border-bottom: 1px solid #222;
     padding-inline: 5px;
+}
+
+.field textarea {
+    height: 20vh;
+    line-height: 1.2 !important;
 }
 
 #contact-form button {
