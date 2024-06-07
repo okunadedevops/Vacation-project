@@ -1,84 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services</title>
+    <link rel="stylesheet" href="./css/general-styles.css">
     <link rel="stylesheet" href="./css/service.css">
-    
-
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="./js/general_functionalities.js" defer></script>
+    <title>Our Services</title>
 </head>
+
 <body>
     <div class="bg-image">
         <header class="flex">
             <h1>Vacation Villa</h1>
             <div id="collapse">
                 <nav class="flex">
-                    <a href="#" class=" wt-400">home</a>
-                    <a href="service.html" class=" wt-400">service</a>
-                    <a href="book.html" class=" wt-400">Contact</a>
+                    <a href="./index.html" class=" wt-400">home</a>
+                    <a href="#" class=" wt-400">service</a>
+                    <a href="./contact.html" class=" wt-400">Contact</a>
                 </nav>
                 <form class="search-container flex" id="search-form">
-                    <button type="button" class="search-btn flex" aria-label="Search the place you typed"><iconify-icon icon="carbon:search"></iconify-icon></button>
+                    <button type="button" class="search-btn flex" aria-label="Search the place you typed"><iconify-icon
+                            icon="carbon:search"></iconify-icon></button>
                     <input type="text" name="place-to-search" id="" placeholder="Search">
                 </form>
             </div>
-            <button type="button" id="open-mobile-menu"><iconify-icon icon="hugeicons:menu-05"></iconify-icon></button>
+            <button type="button" id="open-mobile-menu" aria-label="Click to open nav bar on mobile"><iconify-icon
+                    icon="hugeicons:menu-05"></iconify-icon></button>
         </header>
         <div class="hero">
             <article class="call-to-action mt-font">
-                <h1>Services</h1>
-                <p clas s="subtitle">Expertly crafted vacations, Check out our superb package for you
-                    <span>for your next adventure.</span>
+                <h1 class="mw-font">Services</h1>
+                <p class="subtitle">We've got you covered! Our extensive portfolio features a wide range of
+                    homes, from charming cottages to luxurious villas, perfect for your next vacation or rental
+                    investment
                 </p>
-                <button type="button" class="cta-button flex">Book Now<iconify-icon
+                <button type="button" class="cta-button flex">Book Now <iconify-icon
                         icon="carbon:arrow-right"></iconify-icon></button>
             </article>
         </div>
     </div>
-    <h1>Our Services</h1>
     <div class="services">
-        <div class="service">
-            <img src="service1.jpg" alt="Service 1 Image">
-            <h2>Service One</h2>
-            <p>Discover the exceptional benefits of our first service offering tailored to your needs.</p>
-            <a href="#" class="cta-button">Learn More</a>
-        </div>
-        <div class="service">
-            <img src="service2.jpg" alt="Service 2 Image">
-            <h2>Service Two</h2>
-            <p>Experience unparalleled quality with our second service designed for excellence.</p>
-            <a href="#" class="cta-button">Learn More</a>
-        </div>
-        <div class="service">
-            <img src="service3.jpg" alt="Service 3 Image">
-            <h2>Service Three</h2>
-            <p>Unlock the potential of our third service and achieve remarkable results.</p>
-            <a href="#" class="cta-button">Learn More</a>
-        </div>
+        <h1 class="mw-font">Our Services</h1>
+        <section class="service-container flex">
+            <div class="service">
+                <img src="service1.jpg" alt="Service 1 Image">
+                <h2>Service One</h2>
+                <p>Discover the exceptional benefits of our first service offering tailored to your needs.</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+            <div class="service">
+                <img src="service2.jpg" alt="Service 2 Image">
+                <h2>Service Two</h2>
+                <p>Experience unparalleled quality with our second service designed for excellence.</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+            <div class="service">
+                <img src="service3.jpg" alt="Service 3 Image">
+                <h2>Service Three</h2>
+                <p>Unlock the potential of our third service and achieve remarkable results.</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+        </section>
     </div>
     <footer>
-        <div class="footer-container">
+        <div class="footer-container flex">
             <!-- About Section -->
             <div class="footer-section">
                 <h3>About Us</h3>
-                <p>We are dedicated to providing the best service in the industry. Our mission is to deliver quality and value to our customers.</p>
+                <p>We are dedicated to providing the best service in the industry. Our mission is to deliver quality and
+                    value to our customers.</p>
             </div>
             <!-- Quick Links Section -->
             <div class="footer-section">
                 <h3>Quick Links</h3>
-                <p><a href="#">Home</a></p>
-                <p><a href="#">Services</a></p>
-                <p><a href="#">Contact</a></p>
+                <p><a href="./index.html">Home</a></p>
+                <p><a href="./services.html">Services</a></p>
+                <p><a href="./contact.html">Contact</a></p>
                 <p><a href="#">About</a></p>
             </div>
             <!-- Social Media Section -->
             <div class="footer-section social-links">
                 <h3>Follow Us</h3>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><iconify-icon icon="jam:facebook"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="pajamas:twitter"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="jam:instagram"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="jam:linkedin"></iconify-icon></a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -86,4 +96,5 @@
         </div>
     </footer>
 </body>
+
 </html>

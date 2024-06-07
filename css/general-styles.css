@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-bg-color : #111;
+    --vacation-yellow : #f2c464;
+    --black-overlay : radial-gradient(farthest-corner at 25px 25px, rgb(0, 0, 0, 0.95), rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.75));
+}
+
+::placeholder {
+    color: rgb(255, 255, 255, 0.75);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+input, textarea {
+    outline: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+.wt-400 {
+    font-weight: normal;
+}
+
+.wt-500 {
+    font-weight: bold;
+}
+
+.wt-700 {
+    font-weight: 700;
+}
+
+.mw-font {
+    font-family: "Merriweather", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 5%;
+    color: white;
+    backdrop-filter: blur(3px);
+}
+
+.bg-image {
+    background-image: var(--black-overlay), url(../images/vacation.jpg);
+    background-position: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#collapse {
+    display: flex;
+    width: 60%;
+    gap: 10px;
+}
+
+.search-container {
+    border: 2.5px solid rgb(255, 255, 255, 0.75);
+    border-radius: 30px;
+    max-width: 20vw;
+}
+
+.search-container input[type="text"] {
+    width: 90%;
+    margin-right: 10px;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+}
+
+.search-btn {
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50%;
+    justify-content: center;
+    width: 40px;
+    aspect-ratio: 1/1;
+}
+
+header h1 {
+    font-size: 24px;
+    text-wrap: nowrap;
+}
+
+header img {
+    height: inherit;
+    aspect-ratio: 3/2;
+}
+
+header nav {
+    width: 50vw;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    text-transform: capitalize;
+    display: inline-block;
+    font-size: calc(1em / (1.618 * 0.75));
+    position: relative;
+}
+
+header nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 120%;
+    height: 2px;
+    background-color: inherit;
+    transform: translate(-8%, 50%);
+    transition: transform 200ms, background-color 200ms;
+}
+
+header nav a:hover::after {
+    background-color: #fff;
+    transform: translate(-8%, 120%);
+}
+
+#open-mobile-menu {
+    display: none;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: inherit;
+}
+
+#open-mobile-menu * {
+    pointer-events: none;
+}
+
+#collapse.true {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark-bg-color);
+    padding: 20px 50px;
+    gap: 50px;
+}
+
+#collapse.true nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+
+.hero {
+    height: 95vh;
+    display: flow-root;
+}
+
+.call-to-action {
+    max-width: 50vw;
+    color: #fff;
+    margin: 10% 5%;
+    font-size: clamp(3rem, 2.25rem + 1.5625vw, 3.25rem);
+}
+
+.call-to-action h1 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.call-to-action p {
+    /* note the font size of this tag is (1.5 * 1.618) times smaller than the h1 above it */
+    font-size: calc(1em / (1.618 * 1.5));
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.35;
+    margin: 30px 0;
+}
+
+.call-to-action button {
+    padding: 10px 20px;
+    gap: 5px;
+    font-size: calc(1em / (1.618 * 2));
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--dark-bg-color);
+    color: #fff;
+    padding: 40px 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container .footer-section:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer-container .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+}
+
+.footer-container .footer-section p,
+.footer-container .footer-section a {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.footer-container .footer-section a:hover {
+    color: #fff;
+}
+
+.footer-container .social-links a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #ddd;
+}
+
+.footer-container .social-links a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding: 30px 0;
+    font-size: 14px;
+}

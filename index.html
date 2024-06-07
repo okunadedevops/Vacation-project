@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/general-styles.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,500;1,500&display=swap"
-        rel="stylesheet">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="./js/general_functionalities.js" defer></script>
     <title>Vacation Villa</title>
 </head>
 
@@ -22,21 +21,21 @@
             <div id="collapse">
                 <nav class="flex">
                     <a href="#" class=" wt-400">home</a>
-                    <a href="service.html" class=" wt-400">service</a>
-                    <a href="book.html" class=" wt-400">Contact</a>
+                    <a href="./service.html" class=" wt-400">service</a>
+                    <a href="./contact.html" class=" wt-400">Contact</a>
                 </nav>
                 <form class="search-container flex" id="search-form">
                     <button type="button" class="search-btn flex" aria-label="Search the place you typed"><iconify-icon icon="carbon:search"></iconify-icon></button>
                     <input type="text" name="place-to-search" id="" placeholder="Search">
                 </form>
             </div>
-            <button type="button" id="open-mobile-menu"><iconify-icon icon="hugeicons:menu-05"></iconify-icon></button>
+            <button type="button" id="open-mobile-menu" aria-label="Click to open nav bar on mobile"><iconify-icon icon="hugeicons:menu-05"></iconify-icon></button>
         </header>
         <div class="hero">
-            <article class="call-to-action mt-font">
+            <article class="call-to-action mw-font">
                 <h1>Dream Big, Travel Bigger</h1>
                 <p class="subtitle">Expertly crafted vacations, tailored to your desires. Let our team of travel experts
-                    crate a personalized journey that surpasses your wildest dreams, with every detail meticulously
+                    create a personalized journey that surpasses your wildest dreams, with every detail meticulously
                     considered to create an unforgettable experience that leaves you feeling inspired and eager
                     <span>for your next adventure.</span>
                 </p>
@@ -52,7 +51,7 @@
         </h1>
     </section>
     <section id="about">
-        <h3 class="flex wt-700"><span class="line"></span>about us</h3>
+        <h3 class="flex wt-700 mw-font"><span class="line"></span>about us</h3>
         <div class="flex info">
             <img src="images/new.jpg" alt="image of vacation villa">
             <article class="wt-400">
@@ -67,7 +66,7 @@
 
     <script src="./js/index.js"></script>
     <footer>
-        <div class="footer-container">
+        <div class="footer-container flex">
             <!-- About Section -->
             <div class="footer-section">
                 <h3>About Us</h3>
@@ -77,17 +76,17 @@
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <p><a href="#">Home</a></p>
-                <p><a href="#">Services</a></p>
-                <p><a href="#">Contact</a></p>
-                <p><a href="#">About</a></p>
+                <p><a href="./services.html">Services</a></p>
+                <p><a href="./contact.html">Contact</a></p>
+                <p><a href="#about">About</a></p>
             </div>
             <!-- Social Media Section -->
             <div class="footer-section social-links">
                 <h3>Follow Us</h3>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><iconify-icon icon="jam:facebook"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="pajamas:twitter"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="jam:instagram"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="jam:linkedin"></iconify-icon></a>
             </div>
         </div>
         <div class="footer-bottom">

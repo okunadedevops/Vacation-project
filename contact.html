@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/general-styles.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,500;1,500&display=swap"
-        rel="stylesheet">
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="./css/contact.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="./js/general_functionalities.js" defer></script>
     <title>Document</title>
 </head>
+
 <body>
     <div class="bg-image">
         <header class="flex">
             <h1>Vacation Villa</h1>
             <div id="collapse">
                 <nav class="flex">
-                    <a href="#" class=" wt-400">home</a>
-                    <a href="#" class=" wt-400">about</a>
-                    <a href="#" class=" wt-400">services</a>
+                    <a href="./index.html" class=" wt-400">home</a>
+                    <a href="./index.html#about" class=" wt-400">about</a>
+                    <a href="./service.html" class=" wt-400">services</a>
                 </nav>
                 <form class="search-container flex" id="search-form">
-                    <button type="button" class="search-btn flex" aria-label="Search the place you typed"><iconify-icon icon="carbon:search"></iconify-icon></button>
+                    <button type="button" class="search-btn flex" aria-label="Search the place you typed"><iconify-icon
+                            icon="carbon:search"></iconify-icon></button>
                     <input type="text" name="place-to-search" id="" placeholder="Search">
                 </form>
             </div>
@@ -32,55 +32,60 @@
         </header>
         <div class="hero">
             <article class="call-to-action mt-font">
-                <h1>Services</h1>
-                <p class="subtitle">Expertly crafted vacations, Check out our superb package for you
-                    <span>for your next adventure.</span>
-                </p>
-                <button type="button" class="cta-button flex">Book Now<iconify-icon
-                        icon="carbon:arrow-right"></iconify-icon></button>
+                <h1 class="mw-font">Contact Us</h1>
+                <p class="subtitle"></p>
             </article>
         </div>
     </div>
-    <section class="service">
-        <article class="service-div">
-        <div class="service-img">
 
-        </div>
-        <div class="services">
-            <h1>
-                Vacation Villa Superb Villa
-            </h1>
-            <p>
-                texas, colorado
-            </p>
-            <button class="service-button" type="link" ><a href="#"> Book Now</a></button>
-        </div>
-    </article>
-    <article class="service-div1">
-        <div class="services1">
-            <h1>
-                Vacation Villa Superb Villa
-            </h1>
-            <p>
-                texas, colorado
-            </p>
-            <button class="service-button" type="link" ><a href="#"> Book Now</a></button>
-        </div>
-        <div class="service-img">
-
-        </div>
-    </article>
-    <article class="contact-div">
-        <div class="contact-content">
-            <h1>
-                Vacation Villa Superb Villa
-            </h1>
-            <p>
-                texas, colorado
-            </p>
-            <button class="contact-button" type="link" ><a href="#"> Book Now</a></button>
-        </div>
-    </article>
+    <section class="contact flex">
+        <article>
+            <p class="phone flex"><iconify-icon icon="iconamoon:phone-light" class="icon"></iconify-icon>500 164 24 60</p>
+            <p class="flex"><iconify-icon icon="iconamoon:email-light" class="icon"></iconify-icon><a href="mailto:">---@gmail.com</a></p>
+        </article>
+        <form id="contact-form">
+            <h1>Reach to Us</h1>
+            <div class="field">
+                <input type="text" name="" id="name" placeholder="Full Name" class="input" required>
+            </div>
+            <div class="field">
+                <input type="email" name="" id="email" placeholder="Email Address" class="input" required>
+            </div>
+            <div class="field">
+                <textarea name="" id="message" placeholder="What's your concern?" class="input"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </section>
+    
+    <footer>
+        <div class="footer-container flex">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are dedicated to providing the best service in the industry. Our mission is to deliver quality and value to our customers.</p>
+            </div>
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="./index.html">Home</a></p>
+                <p><a href="./services.html">Services</a></p>
+                <p><a href="#">Contact</a></p>
+                <p><a href="./index.html#about">About</a></p>
+            </div>
+            <!-- Social Media Section -->
+            <div class="footer-section social-links">
+                <h3>Follow Us</h3>
+                <a href="#"><iconify-icon icon="jam:facebook"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="pajamas:twitter"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="jam:instagram"></iconify-icon></a>
+                <a href="#"><iconify-icon icon="jam:linkedin"></iconify-icon></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Vacation Villa. All rights reserved.
+        </div>
+    </footer>
 </body>
+
 </html>
