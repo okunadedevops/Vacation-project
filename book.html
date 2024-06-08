@@ -145,10 +145,10 @@
     </script>
     <script>
         const adminEmail = 'okunadeoluwatimileyin@gmail.com';
-        const bookingForm = document.getElementById('booking-form');
-        const confirmationMessage = document.getElementById('confirmation-message');
+        const BookingForm = document.getElementById('booking-form');
+        const ConfirmationMessage = document.getElementById('confirmation-message');
 
-        bookingForm.addEventListener('submit', (e) => {
+        BookingForm.addEventListener('submit', (e) => {
             e.preventDefault();
             // Handle form submission (e.g., send data to server)
             const name = document.getElementById('name').value;
@@ -164,7 +164,7 @@
             sendAutoResponseToUser(email);
 
             // Show confirmation message
-            confirmationMessage.style.display = 'block';
+            ConfirmationMessage.style.display = 'block';
             bookingForm.reset();
         });
 
